@@ -1,0 +1,156 @@
+:root {
+    --color-one: #FBDB93;
+    --color-two: #8A2D3B;
+    --color-three: #BE5B50;
+    --color-four: #641B2E;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: var(--color-one);
+    font-family: "Lora", serif;
+    color: var(--primary-font-color);
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 60vh;
+    /* Makes sure it takes the full viewport height */
+    text-align: center;
+    /* Ensures the text aligns properly */
+
+}
+
+h1 {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-size: 125px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: var(--color-four);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.grid-container {
+    margin: 0 25%;
+    padding-bottom: 80%;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.pop-ups {
+    color: var(--color-three);
+    margin-bottom: 30%;
+    text-align: center;
+    border-bottom: 1px solid var(--color-three);
+}
+
+.grid1 a {
+    text-decoration: none;
+}
+
+
+
+.section {
+    width: 100vw;
+    /* Full width */
+    min-height: 100vh;
+    /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#products {
+    background-color: var(--color-two);
+    padding: 55px 70px;
+}
+
+.section p {
+    max-width: 800px;
+    /* Adjust as needed */
+    width: 90%;
+    /* Keeps it responsive */
+    font-size: 15px;
+    margin: 0 auto;
+    /* Centers the text */
+    color: #bbe4e9;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#services {
+    background-color: var(--color-four);
+
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.service {
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Stagger the heights */
+.service-1 {
+    transform: translateY(0px);
+}
+
+.service-2 {
+    transform: translateY(20px);
+}
+
+.service-3 {
+    transform: translateY(40px);
+}
+
+button {
+    border-radius: 25px;
+    margin: 5% 35%;
+    padding: 10px 20px;
+    background-color: var(--color-three);
+    border: none;
+    color: #272343;
+
+}
