@@ -9,10 +9,10 @@ body,
 html {
     height: 100%;
     margin: 0;
-    background-color: var(--color-one);
+    background-color: white;
     font-family: "Lora", serif;
-    color: var(--primary-font-color);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -28,7 +28,7 @@ html {
     /* Centers horizontally */
     align-items: center;
     /* Centers vertically */
-    height: 60vh;
+    height: 50vh;
     /* Makes sure it takes the full viewport height */
     text-align: center;
     /* Ensures the text aligns properly */
@@ -40,9 +40,13 @@ h1 {
     font-size: 125px;
     font-weight: 400;
     letter-spacing: 5px;
-    color: var(--color-four);
+    color: var(--color-two);
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+#trader {
+    color: var(--color-one);
 }
 
 .grid-container {
@@ -56,7 +60,7 @@ h1 {
 
 }
 
-.pop-ups {
+.nav-items {
     color: var(--color-three);
     margin-bottom: 30%;
     text-align: center;
@@ -69,38 +73,105 @@ h1 {
 
 
 
-.section {
+section {
     width: 100vw;
-    /* Full width */
     min-height: 100vh;
-    /* Full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+#inicio {
+    display: block;
+}
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+.block {
+    max-width: 700px;
+    padding: 10px;
+
+}
+
+.left-block {
+    margin-left: 5%;
+    /* push it toward the left edge */
+    text-align: left;
+    border-bottom: 1px solid var(--color-one);
+}
+
+.right-block {
+    margin-left: auto;
+    margin-right: 5%;
+    /* push it toward the right edge */
+    text-align: right;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--color-one);
+}
+
+#xq {
+    border-bottom: none;
+}
+
+#xq ul {
+    text-align: start;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--color-two);
+    font-size: 20px;
+
+}
+
+li i {
+    font-size: 18px;
+}
+
+.intro h4 {
+    color: var(--color-three);
+    margin-right: 5%;
+
+}
+
+.intro p {
+    color: var(--color-two);
+    font-size: 20px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-one);
+
+    top: -50px;
+    padding: 50px;
+    /* optional - move higher if needed */
 }
 
 #products {
-    background-color: var(--color-two);
+    background-color: var(--color-four);
     padding: 55px 70px;
+    display: block;
+
 }
 
-.section p {
-    max-width: 800px;
-    /* Adjust as needed */
-    width: 90%;
-    /* Keeps it responsive */
-    font-size: 15px;
-    margin: 0 auto;
-    /* Centers the text */
-    color: #bbe4e9;
-}
+
 
 .grid2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .card {
@@ -108,49 +179,164 @@ h1 {
     background-color: transparent;
 }
 
-.card img {
+
+.image-container {
+    position: relative;
     width: 300px;
     height: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    display: block;
+    filter: brightness(42%);
+    transition: all 400ms ease-in-out;
+
+}
+
+
+.card img:hover {
+    filter: none;
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-one);
+    font-size: 30px;
+    text-align: center;
+    z-index: 2;
+    transition: all 300ms ease-in-out;
+}
+
+.overlay-text:hover {
+    color: var(--color-four);
+
+}
+
+.btn {
+    display: block;
+    margin-top: 7%;
+    color: var(--color-three);
+    border: none;
+}
+
+
+.collapse p {
+    color: var(--color-one);
+    font-size: 18px;
+    padding-top: 5px;
+    text-align: center;
+
 }
 
 #services {
-    background-color: var(--color-four);
-
-}
-
-.grid3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-}
-
-.service {
-    padding: 20px;
-    text-align: center;
-    border-radius: 12px;
-}
-
-/* Stagger the heights */
-.service-1 {
-    transform: translateY(0px);
-}
-
-.service-2 {
-    transform: translateY(20px);
-}
-
-.service-3 {
-    transform: translateY(40px);
-}
-
-button {
-    border-radius: 25px;
-    margin: 5% 35%;
-    padding: 10px 20px;
     background-color: var(--color-three);
-    border: none;
-    color: #272343;
+    display: block;
+    padding: 45px 55px;
+    color: var(--color-four);
+
+}
+
+h4 {
+    text-align: center;
+}
+
+#services .container {
+    display: block;
+    padding-top: 35px;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#services .container2 {
+
+    padding-top: 35px;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+#services .card {
+    color: var(--color-four);
+}
+
+#services .card-title {
+    border-bottom: 1px solid var(--color-one);
+}
+
+
+.diagonal-section {
+
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+
+.left-content {
+    width: 50%;
+
+
+
+}
+
+.left-content p {
+    color: var(--color-two);
+    font-size: 20px;
+
+}
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    color: var(--color-four);
+
+    border: 1px solid var(--color-one);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px 5px;
+}
+
+.right-content h3 {
+    color: var(--color-three);
+}
+
+.right-content i,
+a {
+    font-size: 30px;
+    color: var(--color-four);
+    font-family: "Lora", serif;
+
+}
+
+footer {
+    height: 50vh;
+    background-color: var(--color-four);
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 55px;
+    color: var(--color-one);
+}
+
+footer h2 {
+    font-style: italic;
+    margin-top: 0;
+}
+
+footer #logo {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-size: 40px;
+    border-bottom: 1px solid var(--color-three);
+    color: var(--color-three);
+    padding-top: 20px;
+    font-style: none;
 
 }
