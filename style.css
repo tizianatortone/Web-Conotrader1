@@ -26,14 +26,14 @@ html {
 
 
 .navbar {
-    background-color: var(--color-one);
+    background-color: var(--color-three);
 
 }
 
 .navbar a,
 .nav-item,
 .nav-link {
-    color: var(--color-three);
+    color: var(--color-one);
 }
 
 .navbar .dropdown-menu .dropdown-item {
@@ -59,7 +59,7 @@ html {
     /* vertical centering */
     justify-content: center;
     /* horizontal centering */
-    background-color: var(--color-three);
+    background-color: var(--color-one);
     text-align: center;
 }
 
@@ -67,14 +67,14 @@ h1 {
     font-family: "Big Shoulders Stencil", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    color: var(--color-one);
+    color: var(--color-three);
     display: block;
     font-size: 125px;
 }
 
 h2 {
     font-style: italic;
-    color: var(--color-one);
+    color: var(--color-two);
 }
 
 .right-side {
