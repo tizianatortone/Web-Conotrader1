@@ -148,6 +148,7 @@ img {
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 3px;
+
 }
 
 .card-img-top {
@@ -204,7 +205,6 @@ img {
     margin: 20px;
     color: var(--color-one);
     margin-bottom: 25%;
-
 }
 
 .service h4 {
@@ -215,8 +215,6 @@ img {
 
 .service-1 {
     transform: translateY(0px);
-
-
 }
 
 .service-2 {
@@ -298,7 +296,9 @@ i {
     text-decoration: none;
     color: var(--color-one);
     font-size: 22px;
+
 }
+
 
 footer {
     background-color: var(--color-four);
@@ -313,6 +313,26 @@ footer h5 {
     font-family: "Big Shoulders Stencil",
         sans-serif;
     font-size: 32px;
+    font-weight: 300;
     color: var(--color-one);
     border-bottom: 1px solid var(--color-two);
+}
+
+@media (max-width: 960px) {
+
+    .maingrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    h1 {
+
+        font-weight: 200;
+
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
 }
