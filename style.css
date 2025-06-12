@@ -24,20 +24,23 @@ html {
     overflow-x: hidden;
 }
 
-
 .navbar {
-    background-color: var(--color-three);
-
+    background-color: var(--color-one);
 }
 
 .navbar a,
 .nav-item,
 .nav-link {
-    color: var(--color-one);
+    color: var(--color-three);
 }
 
 .navbar .dropdown-menu .dropdown-item {
     color: var(--color-one);
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
 }
 
 .maingrid {
@@ -48,18 +51,16 @@ html {
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
     margin: 0;
-
 }
 
 .left-side {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     /* vertical centering */
     justify-content: center;
     /* horizontal centering */
-    background-color: var(--color-one);
+    background-color: var(--color-three);
     text-align: center;
 }
 
@@ -67,14 +68,14 @@ h1 {
     font-family: "Big Shoulders Stencil", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    color: var(--color-three);
+    color: var(--color-one);
     display: block;
     font-size: 125px;
 }
 
 h2 {
     font-style: italic;
-    color: var(--color-two);
+    color: var(--color-one);
 }
 
 .right-side {
@@ -92,8 +93,6 @@ img {
     width: 100%;
     object-fit: cover;
     /* ensures image doesn't stretch weirdly */
-
-
 }
 
 .caption-bg {
@@ -121,21 +120,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
-
 .titulos {
-
     text-align: center;
     margin-top: 10%;
     color: var(--color-two);
     padding: 25px;
-
 }
-
-
 
 .productsFlex {
     display: flex;
@@ -148,7 +140,6 @@ img {
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 3px;
-
 }
 
 .card-img-top {
@@ -156,12 +147,9 @@ img {
     border-top-left-radius: 3px;
 }
 
-
 .card-title {
     color: var(--color-one);
-
 }
-
 
 #products .description {
     padding: 35px;
@@ -173,11 +161,9 @@ img {
 
 #rv,
 #tst {
-
     font-weight: bold;
     font-style: italic;
     border: 1px solid var(--color-three);
-
     background-color: var(--color-three)
 }
 
@@ -249,7 +235,6 @@ img {
 }
 
 #italic {
-
     padding: 35px;
     font-size: 20px;
     text-align: center;
@@ -262,14 +247,11 @@ img {
     justify-content: space-between;
     padding: 80px;
     border-top: 1px solid var(--color-two);
-
 }
 
-.left-diagonal {
+.left {
     width: 50%;
-
     border-right: 1px solid var(--color-two);
-
 }
 
 li {
@@ -281,24 +263,21 @@ li i {
     color: var(--color-four);
 }
 
-.right-diagonal {
+.right {
     width: 50%;
     text-align: end;
-
 }
 
-.right-diagonal p {
+.right p {
     font-size: 18px;
 }
 
-.right-diagonal a,
+.right a,
 i {
     text-decoration: none;
     color: var(--color-one);
     font-size: 22px;
-
 }
-
 
 footer {
     background-color: var(--color-four);
@@ -306,7 +285,18 @@ footer {
     display: block;
     padding: 50px 15px;
     text-align: center;
+}
 
+footer img {
+    height: 90px;
+    width: auto;
+    transform: translateY(-10px);
+}
+
+.footerLogoDisplay {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-two);
 }
 
 footer h5 {
@@ -315,7 +305,10 @@ footer h5 {
     font-size: 32px;
     font-weight: 300;
     color: var(--color-one);
-    border-bottom: 1px solid var(--color-two);
+}
+
+footer p {
+    margin-top: 10px;
 }
 
 @media (max-width: 960px) {
@@ -324,15 +317,77 @@ footer h5 {
         grid-template-columns: repeat(1, 1fr);
     }
 
-
     h1 {
-
         font-weight: 200;
-
         font-size: 100px;
     }
 
     h2 {
         font-size: 18px;
     }
+
+    .titulos {
+        font-size: 25px;
+    }
+
+    .productsFlex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 45px;
+    }
+
+    .fade-in ul {
+        text-align: start;
+    }
+
+    .servicesGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        height: 100vh;
+        text-align: center;
+        transform: translateX(-20px);
+    }
+
+    .service h4 {
+
+        border-bottom: 1px solid var(--color-three);
+        padding: 10px;
+    }
+
+    .service-2 {
+        transform: translateY(0px);
+    }
+
+    .service-3 {
+        transform: translateY(0px);
+    }
+
+    .service-4 {
+        transform: translateY(0px);
+    }
+
+    .service-5 {
+        transform: translateY(0px);
+    }
+
+    .nosotros {
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--color-two);
+    }
+
+    .right {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        padding-right: 20px;
+    }
+
 }
