@@ -25,7 +25,7 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
@@ -81,7 +81,7 @@
       sizes="16x16"
       href="/favicon.ico/favicon-16x16.png"
     />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/favicon.ico/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -172,9 +172,9 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="/pictures/download (1).jpeg"
+                src="/pictures/mani1.jpg"
                 class="d-block w-100"
-                alt="..."
+                alt="Mani Entero"
               />
               <div class="carousel-caption d-none d-md-block">
                 <div class="caption-bg">
@@ -193,9 +193,9 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/pictures/images (1).jpeg"
+                src="/pictures/tostadomitades3.jpg"
                 class="d-block w-100"
-                alt="..."
+                alt="Mani"
               />
               <div class="carousel-caption d-none d-md-block">
                 <div class="caption-bg">
@@ -213,9 +213,9 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/pictures/download.jpeg"
+                src="/pictures/pielmitades2.jpg"
                 class="d-block w-100"
-                alt="..."
+                alt="Mani"
               />
               <div class="carousel-caption d-none d-md-block">
                 <div class="caption-bg">
@@ -252,36 +252,48 @@
     <section class="container-fluid p-0" id="products">
       <h2 class="titulos">NUESTROS PRODUCTOS</h2>
       <div class="productsFlex">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img
-            src="/pictures/download (1).jpeg"
+            src="/pictures/piel1.jpg"
             class="card-img-top"
-            alt="..."
+            alt="Mani Crudo con Piel"
           />
           <div class="card-body">
             <h5 class="card-title">MANÍ CRUDO CON PIEL</h5>
           </div>
         </div>
-        <div class="card">
-          <img src="/pictures/images (1).jpeg" class="card-img-top" alt="..." />
+        <div class="card" data-aos="fade-up">
+          <img
+            src="/pictures/tostadomitades2.jpg"
+            class="card-img-top"
+            alt="Mani Tostado"
+          />
           <div class="card-body">
             <h5 class="card-title">MANÍ TOSTADO</h5>
           </div>
         </div>
-        <div class="card">
-          <img src="/pictures/images.jpeg" class="card-img-top" alt="..." />
+        <div class="card" data-aos="fade-up">
+          <img
+            src="/pictures/blanqueado2.jpg"
+            class="card-img-top"
+            alt="Mani Blanqueado"
+          />
           <div class="card-body">
             <h5 class="card-title">MANÍ BLANQUEADO</h5>
           </div>
         </div>
-        <div class="card">
-          <img src="/pictures/download.jpeg" class="card-img-top" alt="..." />
+        <div class="card" data-aos="fade-up">
+          <img
+            src="/pictures/pielmitades1.jpg"
+            class="card-img-top"
+            alt="Mani Packaging a Granel"
+          />
           <div class="card-body">
             <h5 class="card-title">PACKAGING A GRANEL</h5>
           </div>
         </div>
       </div>
-      <div class="description">
+      <div class="description" data-aos="zoom-in">
         <p>
           Maní confitería argentino, seleccionado para los mercados más
           exigentes. Trabajamos con variedades de maní tipo
@@ -337,7 +349,7 @@
     <section class="container-fluid p-0" id="services">
       <h2 class="titulos">NUESTROS SERVICIOS</h2>
       <div class="servicesGrid">
-        <div class="service service-1">
+        <div class="service service-1" data-aos="fade-right">
           <h4>BROKER COMERCIAL</h4>
           <p>
             intermediación entre productores, exportadores e importadores a
@@ -415,12 +427,12 @@
             <a href="mailto:conotrader@gmail.com">conotradellc@gmail.com</a>
           </p>
           <p>
-            <i class="bi bi-telephone-fill"></i>
-            <a href="mailto:conotrader@gmail.com">+34 685 513 814</a>
+            <i class="bi bi-telephone-fill">+34 685 513 814</i>
           </p>
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footerLogoDisplay">
         <img src="/pictures/Conotrade logo 2.png" />
@@ -432,5 +444,9 @@
 
       <p>108 W. 13th Street, Suite 100, Wilmington DE, 19801</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
