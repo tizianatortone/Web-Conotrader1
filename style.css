@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body,
 html {
     height: 100%;
@@ -20,9 +25,9 @@ html {
     font-family: "Scope One", serif;
     color: #393e46;
     font-optical-sizing: auto;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
+
+
 
 .navbar {
     background-color: var(--color-one);
@@ -44,8 +49,8 @@ html {
 }
 
 .maingrid {
-    width: 100vw;
-    /* Viewport width */
+    width: 100%;
+    max-width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -115,8 +120,8 @@ img {
 }
 
 .section {
-    width: 100vw;
-    /* Full width */
+    width: 100%;
+
     min-height: 100vh;
     /* Full screen height */
     display: flex;
