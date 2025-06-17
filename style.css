@@ -11,20 +11,16 @@
     box-sizing: border-box;
 }
 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body,
 html {
+
     height: 100%;
-    width: 100%;
     margin: 0;
     background-color: white;
     font-family: "Scope One", serif;
     color: #393e46;
     font-optical-sizing: auto;
+    overflow-x: clip;
 }
 
 
