@@ -363,8 +363,8 @@ footer p {
 
     }
 
-    .fade-in ul {
-        text-align: start;
+    .fade-in {
+        display: none;
     }
 
     .servicesGrid {
